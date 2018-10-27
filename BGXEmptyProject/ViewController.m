@@ -136,7 +136,6 @@
     {
 
         
-        
         if ([[AppDelegate sharedAppDelegate].bgxManager canWrite])
         {
             
