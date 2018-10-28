@@ -10,17 +10,110 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Colors-->
+        <!--Connect-->
         <scene sceneID="wrQ-Yy-oj8">
             <objects>
-                <viewController title="Colors" id="7dn-FE-cdD" sceneMemberID="viewController">
+                <viewController title="Connect" id="7dn-FE-cdD" customClass="connectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oUf-b5-HOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="Oeh-XK-JW2">
+                                <rect key="frame" x="67" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec8-v9-WeY">
+                                <rect key="frame" x="141" y="354" width="93" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="5"/>
+                                <state key="normal" title="Connect GC5">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectToADevice:" destination="7dn-FE-cdD" eventType="touchUpInside" id="H6q-81-b5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-7p-p54">
+                                <rect key="frame" x="141" y="204" width="93" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="2"/>
+                                <state key="normal" title="Connect GC2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectToADevice:" destination="7dn-FE-cdD" eventType="touchUpInside" id="rx9-dK-O48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8j-Ki-07M">
+                                <rect key="frame" x="141" y="254" width="93" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="3"/>
+                                <state key="normal" title="Connect GC3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectToADevice:" destination="7dn-FE-cdD" eventType="touchUpInside" id="93l-gY-mAX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlh-NZ-T52">
+                                <rect key="frame" x="141" y="304" width="93" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="4"/>
+                                <state key="normal" title="Connect GC4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectToADevice:" destination="7dn-FE-cdD" eventType="touchUpInside" id="Fqb-lc-ggu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze4-hs-jBl">
+                                <rect key="frame" x="142" y="154" width="91" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                <state key="normal" title="Connect GC1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectToADevice:" destination="7dn-FE-cdD" eventType="touchUpInside" id="Wo5-9P-VFn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070000000000000007" green="0.06720000000000001" blue="0.067246666666666677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ec8-v9-WeY" firstAttribute="centerY" secondItem="LXV-9T-XrM" secondAttribute="centerY" constant="50" id="1Yk-Ee-Pky"/>
+                            <constraint firstItem="Rlh-NZ-T52" firstAttribute="centerX" secondItem="LXV-9T-XrM" secondAttribute="centerX" id="3mH-nr-8q3"/>
+                            <constraint firstItem="bEX-7p-p54" firstAttribute="centerX" secondItem="LXV-9T-XrM" secondAttribute="centerX" id="PAK-xM-kQG"/>
+                            <constraint firstItem="w8j-Ki-07M" firstAttribute="centerY" secondItem="LXV-9T-XrM" secondAttribute="centerY" constant="-50" id="PYJ-Il-zoi"/>
+                            <constraint firstItem="bEX-7p-p54" firstAttribute="centerY" secondItem="LXV-9T-XrM" secondAttribute="centerY" constant="-100" id="W02-0b-GD5"/>
+                            <constraint firstItem="Ze4-hs-jBl" firstAttribute="centerY" secondItem="LXV-9T-XrM" secondAttribute="centerY" constant="-150" id="Zps-9o-INY"/>
+                            <constraint firstItem="ec8-v9-WeY" firstAttribute="centerX" secondItem="LXV-9T-XrM" secondAttribute="centerX" id="naf-Ca-SZK"/>
+                            <constraint firstItem="Rlh-NZ-T52" firstAttribute="centerY" secondItem="LXV-9T-XrM" secondAttribute="centerY" id="onb-0N-Dyi"/>
+                            <constraint firstItem="Ze4-hs-jBl" firstAttribute="centerX" secondItem="LXV-9T-XrM" secondAttribute="centerX" id="sxt-p8-Ko5"/>
+                            <constraint firstItem="w8j-Ki-07M" firstAttribute="centerX" secondItem="LXV-9T-XrM" secondAttribute="centerX" id="vST-VZ-wRG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LXV-9T-XrM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Colors" id="avi-xO-Wx8"/>
+                    <tabBarItem key="tabBarItem" title="Connect" id="avi-xO-Wx8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTj-z8-48G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,85 +129,208 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Q2U-T1-sZh"/>
                         <segue destination="7dn-FE-cdD" kind="relationship" relationship="viewControllers" id="N12-Xy-9Xq"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Q2U-T1-sZh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNC-Gc-2dz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4996" y="-99"/>
         </scene>
-        <!--Connect-->
+        <!--Colors-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Colors" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-qo-iac">
-                                <rect key="frame" x="16" y="56" width="121" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="9hW-ZI-eoP"/>
-                                    <constraint firstAttribute="width" constant="121" id="fSy-lf-UXM"/>
-                                </constraints>
-                                <state key="normal" title="Connect Stream"/>
-                                <connections>
-                                    <action selector="connectStreamEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="6NY-5G-2cJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj1-2H-bfB">
-                                <rect key="frame" x="182" y="56" width="177" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="R4N-3a-UPP"/>
-                                </constraints>
-                                <state key="normal" title="Connect Remote"/>
-                                <connections>
-                                    <action selector="connectRemote:" destination="BYZ-38-t0r" eventType="touchDown" id="E1p-0Y-upR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bo9-e9-ub2">
-                                <rect key="frame" x="96" y="111" width="78" height="30"/>
-                                <state key="normal" title="Disconnect"/>
-                                <connections>
-                                    <action selector="disconnectEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="r1h-4p-9J3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoC-eB-knx">
-                                <rect key="frame" x="207" y="111" width="73" height="30"/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="sendEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="b10-Mb-MDP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp2-Fh-blZ">
-                                <rect key="frame" x="152" y="271" width="59" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="qz2-e8-rSb">
+                                <rect key="frame" x="67" y="20" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Connect"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ley-55-dT8" customClass="custom_button">
+                                <rect key="frame" x="37.5" y="194" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mVw-qd-UoH"/>
+                                    <constraint firstAttribute="height" constant="50" id="yI4-F7-esW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Pink">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="connectDevice:" destination="BYZ-38-t0r" eventType="touchDown" id="jL2-da-6fG"/>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAm-7c-9Cn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsE-Hm-gA3" customClass="custom_button">
+                                <rect key="frame" x="237.5" y="194" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cWT-sM-VF5"/>
+                                    <constraint firstAttribute="width" constant="100" id="rnK-yL-q1O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akl-E7-2Vx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xl0-d9-Fdv" customClass="custom_button">
+                                <rect key="frame" x="237.5" y="294" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gpS-MN-3ay"/>
+                                    <constraint firstAttribute="height" constant="50" id="hjI-UU-Aij"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCX-RR-34x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y05-jl-Tsp" customClass="custom_button">
+                                <rect key="frame" x="237.5" y="394" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ULb-CP-WTv"/>
+                                    <constraint firstAttribute="height" constant="50" id="tqd-Pf-yTw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RxR-5r-LgI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOj-8j-3eG" customClass="custom_button">
+                                <rect key="frame" x="237.5" y="494" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wls-Ie-gyW"/>
+                                    <constraint firstAttribute="width" constant="100" id="zNa-wx-Dd0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Yellow">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kkI-HW-RoM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usd-Za-KLN" customClass="custom_button">
+                                <rect key="frame" x="37.5" y="294" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1lK-oE-0Pv"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zhq-Aw-wb5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Dodgers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLQ-N2-eSI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZp-hd-mLz" customClass="custom_button">
+                                <rect key="frame" x="37.5" y="394" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AJx-U4-rvS"/>
+                                    <constraint firstAttribute="height" constant="50" id="CPe-3G-daN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Longhorns">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLa-nC-Dh1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBY-sx-h84" customClass="custom_button">
+                                <rect key="frame" x="37.5" y="494" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1wm-x6-FAn"/>
+                                    <constraint firstAttribute="width" constant="100" id="pN3-eI-Pu6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="USA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKp-fT-8ri"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.070000000000000007" green="0.06720000000000001" blue="0.067246666666666677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Nj1-2H-bfB" firstAttribute="leading" secondItem="g7Y-qo-iac" secondAttribute="trailing" constant="45" id="734-ur-M5B"/>
-                            <constraint firstItem="g7Y-qo-iac" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="DF8-ij-pxK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bo9-e9-ub2" secondAttribute="trailing" constant="201" id="DL7-n0-IMR"/>
-                            <constraint firstItem="Nj1-2H-bfB" firstAttribute="top" secondItem="g7Y-qo-iac" secondAttribute="top" id="TxG-oB-YSA"/>
-                            <constraint firstItem="Nj1-2H-bfB" firstAttribute="centerX" secondItem="IoC-eB-knx" secondAttribute="centerX" id="g3S-Dt-HHG"/>
-                            <constraint firstItem="g7Y-qo-iac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jOh-ji-V2v"/>
-                            <constraint firstItem="Nj1-2H-bfB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pr2-yI-Daq"/>
-                            <constraint firstItem="IoC-eB-knx" firstAttribute="top" secondItem="Nj1-2H-bfB" secondAttribute="bottom" constant="21" id="uXQ-se-XMY"/>
-                            <constraint firstItem="bo9-e9-ub2" firstAttribute="top" secondItem="g7Y-qo-iac" secondAttribute="bottom" constant="23" id="yNA-gD-MRe"/>
+                            <constraint firstItem="XBY-sx-h84" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-100" id="1PJ-3r-QhW"/>
+                            <constraint firstItem="usd-Za-KLN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1eX-SM-T8Y"/>
+                            <constraint firstItem="EZp-hd-mLz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="6xX-Ai-uyH"/>
+                            <constraint firstItem="Xl0-d9-Fdv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="100" id="9dv-Ox-ewb"/>
+                            <constraint firstItem="Ley-55-dT8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-100" id="9kN-Z0-amr"/>
+                            <constraint firstItem="XBY-sx-h84" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="200" id="D0q-wD-93d"/>
+                            <constraint firstItem="XsE-Hm-gA3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="LEE-xw-FLr"/>
+                            <constraint firstItem="usd-Za-KLN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-100" id="MMz-5e-Ima"/>
+                            <constraint firstItem="y05-jl-Tsp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="100" id="RYA-0w-VCL"/>
+                            <constraint firstItem="EZp-hd-mLz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-100" id="Ufw-JQ-CwN"/>
+                            <constraint firstItem="Ley-55-dT8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="bN3-hw-FWv"/>
+                            <constraint firstItem="HOj-8j-3eG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="200" id="cDX-NV-iPH"/>
+                            <constraint firstItem="Xl0-d9-Fdv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dCI-sM-C7p"/>
+                            <constraint firstItem="y05-jl-Tsp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="iw0-H9-l6g"/>
+                            <constraint firstItem="HOj-8j-3eG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="100" id="mIS-Dc-ZE7"/>
+                            <constraint firstItem="XsE-Hm-gA3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="100" id="vVg-dP-BCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Connect" id="azg-W7-OLe"/>
+                    <tabBarItem key="tabBarItem" title="Colors" id="azg-W7-OLe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4042" y="-500"/>
+            <point key="canvasLocation" x="-4042.4000000000001" y="-500.59970014992507"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image2" width="2208" height="1242"/>
+    </resources>
 </document>

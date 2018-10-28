@@ -187,19 +187,15 @@
     }
 }
 
-- (IBAction)connectStreamEvent:(id)sender {
+- (IBAction)buttonPress:(id)sender {
 
-  printf("%s\n", __func__);
-    bool result = [[AppDelegate sharedAppDelegate].bgxManager writeBusMode: STREAM_MODE];
-  if (result) {
-    printf("writeBusMode success\n");
-  } else {
-    printf("writeBusMode failed\n");
-  }
+  NSLog(@"Button: %ld", [sender tag]);
 }
 
+
+
 - (IBAction)connectRemote:(id)sender {
-    
+  
   printf("%s\n",__func__);
   bool result = [[AppDelegate sharedAppDelegate].bgxManager writeBusMode: REMOTE_COMMAND_MODE];
   if (result) {
@@ -207,8 +203,8 @@
   } else {
     printf("writeBusMode failed\n");
   }
-
 }
+
 
 - (IBAction)connectDevice:(id)sender {
   
@@ -224,16 +220,5 @@
     [self sendData];
 }
 
-- (IBAction)disconnectEvent:(id)sender {
-    
-  printf("%s\n",__func__);
-  bool result = [[AppDelegate sharedAppDelegate].bgxManager disconnect];
-  if (result) {
-    printf("writeBusMode success\n");
-  } else {
-    printf("writeBusMode failed\n");
-  }
-
-}
 
 @end

@@ -17,6 +17,8 @@
 		44CC67E12130B39A00D87B18 /* BGXpress.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44CC67D82130B2F200D87B18 /* BGXpress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C3DCC3B2182D49200367087 /* NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3DCC3A2182D49200367087 /* NotificationNames.m */; };
 		DC31429E2184F854006B8F12 /* TabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC31429D2184F854006B8F12 /* TabBarControllerViewController.m */; };
+		DC3142E221853A02006B8F12 /* connectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3142E021853A02006B8F12 /* connectViewController.m */; };
+		DC3142E921855D4F006B8F12 /* custom_button.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3142E821855D4F006B8F12 /* custom_button.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		7C3DCC3C2182D4F700367087 /* BGXCommanderPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGXCommanderPrefixHeader.pch; sourceTree = "<group>"; };
 		DC31429C2184F854006B8F12 /* TabBarControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarControllerViewController.h; sourceTree = "<group>"; };
 		DC31429D2184F854006B8F12 /* TabBarControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarControllerViewController.m; sourceTree = "<group>"; };
+		DC3142E021853A02006B8F12 /* connectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = connectViewController.m; sourceTree = "<group>"; };
+		DC3142E121853A02006B8F12 /* connectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = connectViewController.h; sourceTree = "<group>"; };
+		DC3142E721855D4F006B8F12 /* custom_button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = custom_button.h; sourceTree = "<group>"; };
+		DC3142E821855D4F006B8F12 /* custom_button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = custom_button.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +115,13 @@
 				44CC67BD2130B2DB00D87B18 /* AppDelegate.m */,
 				44CC67BF2130B2DB00D87B18 /* ViewController.h */,
 				44CC67C02130B2DB00D87B18 /* ViewController.m */,
+				DC3142E121853A02006B8F12 /* connectViewController.h */,
+				DC3142E021853A02006B8F12 /* connectViewController.m */,
 				DC31429C2184F854006B8F12 /* TabBarControllerViewController.h */,
 				DC31429D2184F854006B8F12 /* TabBarControllerViewController.m */,
 				44CC67C22130B2DB00D87B18 /* Main.storyboard */,
+				DC3142E721855D4F006B8F12 /* custom_button.h */,
+				DC3142E821855D4F006B8F12 /* custom_button.m */,
 				44CC67C52130B2DC00D87B18 /* Assets.xcassets */,
 				44CC67C72130B2DC00D87B18 /* LaunchScreen.storyboard */,
 				44CC67CA2130B2DC00D87B18 /* Info.plist */,
@@ -233,6 +243,8 @@
 				44CC67C12130B2DB00D87B18 /* ViewController.m in Sources */,
 				7C3DCC3B2182D49200367087 /* NotificationNames.m in Sources */,
 				44CC67CC2130B2DC00D87B18 /* main.m in Sources */,
+				DC3142E221853A02006B8F12 /* connectViewController.m in Sources */,
+				DC3142E921855D4F006B8F12 /* custom_button.m in Sources */,
 				44CC67BE2130B2DB00D87B18 /* AppDelegate.m in Sources */,
 				DC31429E2184F854006B8F12 /* TabBarControllerViewController.m in Sources */,
 			);
