@@ -131,65 +131,50 @@
     NSLog(@"plainString data receieved: %@", plainString);
 }
 
--(void)sendData
+-(void)sendData:(NSInteger)buttonTag
 {
+    NSString *cmd;
+  NSLog(@"");
     if (STREAM_MODE == self.busMode)
     {
-
-        
         if ([[AppDelegate sharedAppDelegate].bgxManager canWrite])
         {
-            
-            NSString *testSendStrig = @"Send text";
-            
-            self.textMode = SEND_MODE;
-
-            NSMutableString * string2Send = [testSendStrig mutableCopy];
-            
-            switch (self.lineEndings)
-            {
-                case None:
-                    break;
-                case CR:
-                    [string2Send appendString:[NSString stringWithFormat:@"%c", 0x0D]];
-                    break;
-                case LF:
-                    [string2Send appendString:[NSString stringWithFormat:@"%c", 0x0A]];
-                    break;
-                case CRLF:
-                    [string2Send appendString:[NSString stringWithFormat:@"%c%c", 0x0D, 0x0A]];
-                    break;
-                case LFCR:
-                    [string2Send appendString:[NSString stringWithFormat:@"%c%c", 0x0A, 0x0D]];
-                    break;
-                default:
-                    break;
-            }
-            
-            bool result = [[AppDelegate sharedAppDelegate].bgxManager writeString:string2Send];
-          NSLog(@"Writing %@: %s\n", string2Send, result ? "Success" : "Failed");
-
-            
+          switch(buttonTag) {
+            case 6:  cmd = @"7"; break; // Murrica!
+            case 7:  cmd = @"1"; break; // red
+            case 8:  cmd = @"2"; break; // green
+            case 9:  cmd = @"3"; break; // blue
+            case 10: cmd = @"h"; break; // yellow
+            case 11: cmd = @"4"; break; // pink
+            case 12: cmd = @"5"; break; // dodgers
+            case 13: cmd = @"6"; break; // longhorns
+            case 14: cmd = @"0"; break; // off
+            default:
+              NSLog(@"Invalid button tag %ld", buttonTag);
+              break;
+          }
+          bool result = [[AppDelegate sharedAppDelegate].bgxManager writeString:(cmd)];
+          NSLog(@"Writing %@: %s\n", cmd, result ? "Success" : "Failed");
         }
         else
         {
-            NSLog(@"Can't write data");
-            
+            NSLog(@"Can't write data, canWrite is false");
             self.textMode = ERROR_MODE;
-
         }
     }
     else if (REMOTE_COMMAND_MODE == self.busMode)
     {
-        
-        [[AppDelegate sharedAppDelegate].bgxManager sendCommand:@"Test string send" args:@""];
-   
+      NSLog(@"Problem -- BGX is in command mode, not stream mode");
+        //[[AppDelegate sharedAppDelegate].bgxManager sendCommand:@"Test string send" args:@""];
+    } else {
+      NSLog(@"not in stream mode");
     }
 }
 
 - (IBAction)buttonPress:(id)sender {
 
-  NSLog(@"Button: %ld", [sender tag]);
+  NSLog(@"Button press: %ld", [sender tag]);
+  [self sendData:[sender tag]];
 }
 
 
@@ -214,11 +199,11 @@
   NSLog(@"Tried to connect to %@: %s\n", device_name, result ? "Success" : "Failed");
 }
 
-- (IBAction)sendEvent:(id)sender
-{
-  printf("%s\n",__func__);
-    [self sendData];
-}
+//- (IBAction)sendEvent:(id)sender
+//{
+//  printf("%s\n",__func__);
+//    [self sendData];
+//}
 
 
 @end
